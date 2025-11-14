@@ -1,0 +1,9 @@
+{
+  "noConnection": {
+    "noConnectionTitle": "No Internet Connection",
+    "noConnectionSubtitle": "Please check your internet settings."
+  },
+  "buttons": {
+    "tryAgain": "Try Again"
+  }
+}

@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# General
+# ---------------------------------------------------------------------------
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ---------------------------------------------------------------------------
+# IDEs
+# ---------------------------------------------------------------------------
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# ---------------------------------------------------------------------------
+# Flutter / Dart / Pub
+# ---------------------------------------------------------------------------
+.dart_tool/
+.pub/
+/build/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+**/doc/api/
+**/ios/Flutter/.last_build_id
+/coverage/
+
+# ---------------------------------------------------------------------------
+# Android
+# ---------------------------------------------------------------------------
+/android/.gradle/
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/local.properties
+
+# Signing keys (kesinlikle pushlama!)
+*.jks
+*.keystore
+key.properties
+
+# ---------------------------------------------------------------------------
+# iOS / macOS
+# ---------------------------------------------------------------------------
+/ios/Pods/
+/ios/Flutter/flutter_export_environment.sh
+ios/Runner/GoogleService-Info.plist
+macos/Runner/GoogleService-Info.plist
+
+# ---------------------------------------------------------------------------
+# Firebase Config
+# ---------------------------------------------------------------------------
+# Bunlar ASLA GitHub'a yüklenmemeli
+**/google-services.json
+**/GoogleService-Info.plist
+firebase_options.dart
+.env
+.env.*
+*.env
+*.env.*
+
+# ---------------------------------------------------------------------------
+# Generated Files
+# ---------------------------------------------------------------------------
+app.*.map.json
+app.*.symbols
+
+# ---------------------------------------------------------------------------
+# Additional
+# ---------------------------------------------------------------------------
+# Thumbnail caching, macOS metadata
+Thumbs.db

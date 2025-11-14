@@ -1,0 +1,9 @@
+{
+    "noConnection": {
+        "noConnectionTitle": "İnternet Bağlantısı Yok",
+        "noConnectionSubtitle": "Lütfen internet ayarlarınızı kontrol edin."
+    },
+    "buttons": {
+        "tryAgain": "Tekrar Dene"
+    }
+}
