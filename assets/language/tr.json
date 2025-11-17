@@ -4,6 +4,13 @@
         "noConnectionSubtitle": "Lütfen internet ayarlarınızı kontrol edin."
     },
     "buttons": {
-        "tryAgain": "Tekrar Dene"
+        "tryAgain": "Tekrar Dene",
+        "startBtn":"Başla"
+    },
+    "splashPage": {
+        "welcomeText":"Düşüncelerini, anılarını ve hedeflerini gelecekteki kendine gönder."
+    },
+    "homePage": {
+        "createCapsule": "Kapsül Oluştur"
     }
 }

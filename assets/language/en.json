@@ -4,6 +4,13 @@
     "noConnectionSubtitle": "Please check your internet settings."
   },
   "buttons": {
-    "tryAgain": "Try Again"
+    "tryAgain": "Try Again",
+    "startBtn": "Start"
+  },
+  "splashPage": {
+    "welcomeText": "Send your thoughts, memories, and goals to your future self."
+  },
+  "homePage": {
+    "createCapsule": "Create Capsule"
   }
 }

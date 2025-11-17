@@ -3,5 +3,6 @@
 class AppConstants {
   static const String APP_VERSION = "v1.0.0";
   static const String LANG_ASSET_PATH = 'assets/language';
-  static const String APP_LOGO = 'assets/images/pixspire.png';
+  static const String APP_EMPTY_LOGO = 'assets/images/loxis_empty_logo.png';
+  static const String APP_LOGO = 'assets/images/loxis_logo.png';
 }

@@ -18,14 +18,23 @@ class AppHelper {
     await SharedPrefsManager.init();
 
     // 4. FIREBASE BAŞLAT
-    await Firebase.initializeApp(
-      options: FirebaseOptions(
-        apiKey: dotenv.env['FIREBASE_API_KEY']!,
-        appId: dotenv.env['FIREBASE_APP_ID_ANDROID']!,
-        messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
-        projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
-        storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
-      ),
-    );
+    try {
+      await Firebase.initializeApp(
+        options: FirebaseOptions(
+          apiKey: dotenv.env['FIREBASE_API_KEY']!,
+          appId: dotenv.env['FIREBASE_APP_ID_ANDROID']!,
+          messagingSenderId: dotenv.env['FIREBASE_MESSAGING_SENDER_ID']!,
+          projectId: dotenv.env['FIREBASE_PROJECT_ID']!,
+          storageBucket: dotenv.env['FIREBASE_STORAGE_BUCKET']!,
+        ),
+      );
+    } on FirebaseException catch (e) {
+      if (e.code == 'duplicate-app') {
+        // Zaten init edilmiş, sorun yok. Hot restart sonrası geliyor.
+        // debugPrint('Firebase already initialized: ${e.message}');
+      } else {
+        rethrow; // başka bir hata ise patlasın
+      }
+    }
   }
 }

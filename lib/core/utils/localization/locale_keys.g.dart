@@ -7,6 +7,11 @@ abstract class  LocaleKeys {
   static const noConnection_noConnectionSubtitle = 'noConnection.noConnectionSubtitle';
   static const noConnection = 'noConnection';
   static const buttons_tryAgain = 'buttons.tryAgain';
+  static const buttons_startBtn = 'buttons.startBtn';
   static const buttons = 'buttons';
+  static const splashPage_welcomeText = 'splashPage.welcomeText';
+  static const splashPage = 'splashPage';
+  static const homePage_createCapsule = 'homePage.createCapsule';
+  static const homePage = 'homePage';
 
 }
